@@ -1,5 +1,5 @@
 <% @artists.each do |artist| %>
-  <li><%= link_to artist.name, artist_path(artist) %> - <%= artist.song_count %></li>
+  <li><%= link_to artist.name, artist_path(artist) %> - <%= artist.song_count %>
 
-	<%= link_to "Delete", artist, method: :delete, data: { confirm: "Really?" } %>
+	<%= link_to "Delete", artist, method: :delete, data: { confirm: "Really?" } %></li>
 <% end %>
